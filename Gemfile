@@ -7,7 +7,7 @@ gem 'rake'
 gem 'wdm', '~> 0.1' if Gem.win_platform?
 
 # Jekyll
-gem 'jekyll', :git => 'https://github.com/jekyll/jekyll.git', :ref => 'a944dd940a51db6b9a8db3f7f2dd15de8e04e764'
+gem 'jekyll', :git => 'https://github.com/jekyll/jekyll.git', :ref => '7508da11c174ca4ada21ee1e3f4ea3a04cd8406f'
 group :jekyll_plugins do
   gem 'jekyll-sitemap'
   gem 'jemoji'
