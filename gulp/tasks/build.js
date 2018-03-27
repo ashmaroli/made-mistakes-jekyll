@@ -18,11 +18,11 @@ gulp.task('site:tmp', () => {
 // 'gulp site --prod' -- builds site with production settings
 gulp.task('site', done => {
   if (!argv.prod) {
-    shell.exec('bundle exec jekyll build --config _config.yml,_config.dev.yml');
+    shell.exec('bundle exec jekyll build --profile --config _config.yml,_config.dev.yml');
     done();
   } else if (argv.prod) {
     shell.exec('bundle exec jekyll algolia');
-    shell.exec('bundle exec jekyll build');
+    shell.exec('bundle exec jekyll build --profile');
     done();
   }
 });
